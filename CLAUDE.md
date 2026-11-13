@@ -2,6 +2,29 @@
 
 Brand website for **Funsho Peters**, a freelancer offering CRM and AI automation services on Upwork. The site's job is to establish him as an authority in AI automation. Detailed content and design briefs are still to come, so ask before inventing copy, prices, testimonials or client names.
 
+## This is a redesign of funshopeters.io
+
+The live site at https://funshopeters.io (as of 13 Nov 2026) is a single pre-launch page, with no other pages and no navigation menu:
+
+- Brand: "FP Funsho Peters", tagline "AI-powered business systems"
+- Hero: "Turn attention into followed-up opportunities." Practical frameworks, tools and real-world proof for founders and operators.
+- Three pillars:
+  - **Build**: AI-powered lead systems that capture enquiries, follow up over long sales cycles, and measure results.
+  - **Prove**: the Lead-Machine Framework, installed publicly in a real estate business, with a baseline first and results published along with their limitations.
+  - **Teach**: Capture, Nurture, Convert, Optimize, taught free in the 3-Day Lead-Machine Quickstart.
+- A launch countdown to 30 August 2026 (now in the past, and the countdown shows "--")
+- Email signup ("Join free"): the 3-Day Quickstart plus a weekly newsletter, Lead-Machine Weekly
+- Contact: hello@funshopeters.io
+- Tone: direct and plain-spoken, "No hype, no tool-chasing". No testimonials and no performance numbers.
+
+Before replacing copy, the email signup or the Lead-Machine branding, ask what to keep. Also confirm which email tool the signup form posts to.
+
+## Hosting: Hostinger
+
+- The domain and hosting are on Hostinger. This site is static Astro (the default `output: 'static'`), so no adapter is needed.
+- To deploy: in hPanel, go to Websites → Add Website → Node.js Apps and import this GitHub repo. Hostinger builds with `npm run build`, and each push to the linked branch redeploys. This needs a Business Web Hosting or Cloud plan. On other plans, run `npm run build` and upload the contents of `dist/` to `public_html` with File Manager.
+- Don't switch the live domain over until the user approves the new site, and back up the current site first.
+
 ## Stack
 
 - [Astro](https://docs.astro.build) 7, static output, TypeScript strict
