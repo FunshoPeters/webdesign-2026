@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "codegraph": {
+      "type": "stdio",
+      "command": "codegraph",
+      "args": ["serve", "--mcp", "--no-telemetry"],
+      "env": {
+        "CODEGRAPH_TELEMETRY": "0"
+      },
+      "alwaysLoad": true
+    }
+  }
+}
